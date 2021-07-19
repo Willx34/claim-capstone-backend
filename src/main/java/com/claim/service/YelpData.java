@@ -30,7 +30,7 @@ public class YelpData {
 		        .queryParam("limit", 21);
 		
 		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Bearer YIS7aqXTgIsBRx2xezXTi79ysjcqUDy3gl7nkHHng_0HarNGJpR_HREzpcv7l5ije8A5cjw0Pt66jcCO5iH40L6bKzqWBnhwVP4t_IKSc4xw5dxQn2BZS9_sG4zGYHYx");
+		headers.set("Authorization", ""); //insert API key here
 		HttpEntity request = new HttpEntity(headers);
 		
 		System.out.println(builder.toUriString());
