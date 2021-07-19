@@ -43,7 +43,7 @@ public class YelpData {
 		String url = "https://api.yelp.com/v3/businesses/" + id;
 				
 		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Bearer YIS7aqXTgIsBRx2xezXTi79ysjcqUDy3gl7nkHHng_0HarNGJpR_HREzpcv7l5ije8A5cjw0Pt66jcCO5iH40L6bKzqWBnhwVP4t_IKSc4xw5dxQn2BZS9_sG4zGYHYx");
+		headers.set("Authorization", "Bearer "); //insert API key here
 		HttpEntity request = new HttpEntity(headers);
 		
 		return restTemplate.exchange(url, HttpMethod.GET, request, Business.class).getBody();
@@ -54,7 +54,7 @@ public class YelpData {
 		String url = "https://api.yelp.com/v3/businesses/" + id + "/reviews";
 				
 		HttpHeaders headers = new HttpHeaders();
-		headers.set("Authorization", "Bearer YIS7aqXTgIsBRx2xezXTi79ysjcqUDy3gl7nkHHng_0HarNGJpR_HREzpcv7l5ije8A5cjw0Pt66jcCO5iH40L6bKzqWBnhwVP4t_IKSc4xw5dxQn2BZS9_sG4zGYHYx");
+		headers.set("Authorization", "Bearer "); //insert API key here
 		HttpEntity request = new HttpEntity(headers);
 		
 		return restTemplate.exchange(url, HttpMethod.GET, request, YelpReviewResponse.class).getBody();
